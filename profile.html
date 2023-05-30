@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Fitness Pal</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+  </head>
+  <body>
+    <div class="modal-wrapper hidden" id="mealModalWrapper">
+      <div class="modal-container">
+        <div class="modal-box">
+          <div class="form-modal" id="signupModal">
+            <div class="title">
+              <h1>Get Meal Plan</h1>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Height" />
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Weight" />
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="BMI" />
+            </div>
+            <div class="btn-box">
+              <button id="planBtn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-wrapper hidden" id="modalWrapper">
+      <div class="modal-container">
+        <div class="modal-box table-modal-box" id="modalBox"></div>
+      </div>
+    </div>
+
+    <!-- header section starts      -->
+    <header class="header">
+      <a href="/index.html" class="logo"> <span>My</span>FitnessPal</a>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <a href="/index.html">home</a>
+        <a href="/index.html#about">about</a>
+        <a href="/index.html#features">features</a>
+        <a href="/index.html#pricing">pricing</a>
+        <a href="/index.html#trainers">trainers</a>
+        <a href="/index.html#contact">contact</a>
+      </nav>
+    </header>
+
+    <!-- header section ends     -->
+
+    <section class="meal-box">
+      <div class="left-box">
+        <div class="img-box">
+          <img src="/images/meal1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="right-box">
+        <div class="title">
+          <h1>Meal Plan</h1>
+        </div>
+        <div class="info">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+            quasi illo tempore commodi. Tempore alias eum repellendus
+            aspernatur, aut iste sequi, repellat quod perferendis unde atque,
+            necessitatibus impedit odio. Eum.
+          </p>
+        </div>
+        <button class="btn" id="getPlanBtn">Get Plan</button>
+      </div>
+    </section>
+
+    <section class="meditate-box">
+      <div class="left-box">
+        <div class="img-box">
+          <img src="/images/meditation1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="right-box">
+        <div class="title">
+          <h1>Meditation</h1>
+        </div>
+        <div class="info">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+            quasi illo tempore commodi. Tempore alias eum repellendus
+            aspernatur, aut iste sequi, repellat quod perferendis unde atque,
+            necessitatibus impedit odio. Eum.
+          </p>
+        </div>
+        <button class="btn" id="viewMeditationBtn">View</button>
+      </div>
+    </section>
+
+    <section class="workout-box">
+      <div class="left-box">
+        <div class="img-box">
+          <img src="/images/home-bg-1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="right-box">
+        <div class="title">
+          <h1>Workout</h1>
+        </div>
+        <div class="info">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+            quasi illo tempore commodi. Tempore alias eum repellendus
+            aspernatur, aut iste sequi, repellat quod perferendis unde atque,
+            necessitatibus impedit odio. Eum.
+          </p>
+        </div>
+        <button class="btn" id="viewWorkoutBtn">View</button>
+      </div>
+    </section>
+
+    <section class="contact-box" id="contact">
+      <div class="left-box">
+        <div class="img-box">
+          <img src="/images/bg1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="right-box">
+        <div class="title">
+          <h1>Contact Us</h1>
+        </div>
+        <form id="contactForm">
+          <input
+            type="text"
+            placeholder="Name"
+            class="box"
+            id="nameInputField"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            class="box"
+            id="emailInputField"
+          />
+          <input
+            type="text"
+            placeholder="Contact No (+61)"
+            class="box"
+            id="contactInputField"
+          />
+          <input type="text" placeholder="Age" class="box" id="ageInputField" />
+          <textarea
+            name=""
+            placeholder="Message"
+            cols="30"
+            rows="5"
+            id="messageInputField"
+          ></textarea>
+          <div class="error-box hidden" id="errorBox">
+            <p id="errorText"></p>
+          </div>
+          <input type="submit" value="send message" class="input-btn" />
+        </form>
+      </div>
+    </section>
+
+    <!-- footer section starts  -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a class="links" href="#home">home</a>
+          <a class="links" href="#about">about</a>
+          <a class="links" href="#features">features</a>
+          <a class="links" href="#pricing">pricing</a>
+          <a class="links" href="#trainers">trainers</a>
+          <a class="links" href="#contact">contact</a>
+        </div>
+
+        <div class="box">
+          <h3>opening hours</h3>
+          <p>monday : <i> 7:00am - 10:30pm </i></p>
+          <p>tuesday : <i> 7:00am - 10:30pm </i></p>
+          <p>wednesday : <i> 7:00am - 10:30pm </i></p>
+          <p>friday : <i> 7:00am - 10:30pm </i></p>
+          <p>saturday : <i> 7:00am - 10:30pm </i></p>
+          <p>sunday : <i> closed </i></p>
+        </div>
+
+        <div class="box">
+          <h3>opening hours</h3>
+          <p><i class="fas fa-phone"></i> +123-456-7890</p>
+          <p><i class="fas fa-phone"></i> +999-888-777</p>
+          <p><i class="fas fa-envelope"></i> abhimanyusalaria@gmail.com</p>
+          <p><i class="fas fa-map"></i> sydney, australia</p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <form action="">
+            <input
+              type="email"
+              name=""
+              class="email"
+              placeholder="enter your email"
+              id=""
+            />
+            <input type="submit" value="subscribe" class="btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="credit">
+      created by <span>Mr. Abhimanyu Salaria </span> | all rights reserved!
+    </div>
+
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

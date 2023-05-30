@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Fitness Pal</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="modal-wrapper hidden" id="formModalWrapper">
+      <div class="modal-container">
+        <div class="modal-box">
+          <div class="form-modal" id="signupModal">
+            <div class="title">
+              <h1>Sign Up</h1>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Full Name" />
+            </div>
+            <div class="input-box">
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Contact" />
+            </div>
+            <div class="input-box">
+              <input type="password" placeholder="Password" />
+            </div>
+            <div class="note-box">
+              <a href="#" class="open-login-link">Already Sign Up ?</a>
+            </div>
+            <div class="btn-box">
+              <button class="open-login-link">Sign Up</button>
+            </div>
+          </div>
+          <div class="form-modal hidden" id="loginModal">
+            <div class="title">
+              <h1>Login</h1>
+            </div>
+            <div class="input-box">
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-box">
+              <input type="password" placeholder="Password" />
+            </div>
+            <div class="note-box">
+              <a href="#" class="open-signup-link">Don't have account ?</a>
+            </div>
+            <div class="btn-box">
+              <a href="/profile.html">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-wrapper hidden" id="modalWrapper">
+      <div class="modal-container" id="modalContainer">
+        <div class="modal-box" id="modalBox"></div>
+      </div>
+    </div>
+
+    <!-- header section starts      -->
+    <header class="header">
+      <a href="/index.html" class="logo"> <span>My</span>FitnessPal</a>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <a href="/index.html">home</a>
+        <a href="#about">about</a>
+        <a href="#features">features</a>
+        <a href="#pricing">pricing</a>
+        <a href="#trainers">trainers</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </header>
+
+    <!-- header section ends     -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="head-container">
+        <div class="head-box">
+          <div class="content">
+            <span>be fit, be healthy</span>
+            <h3>The body achieves what the mind believes.</h3>
+            <a href="javascript:void(0)" class="btn" id="getStartedBtn"
+              >get started</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <div class="image">
+        <img src="images/about-img.jpg" alt="" />
+      </div>
+
+      <div class="content">
+        <span>about us</span>
+        <h3 class="title">Every day is a chance to become better</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quia
+          accusamus dicta inventore nobis obcaecati vero odio, id dolorum.
+          Consequatur ex, aperiam deserunt nostrum perferendis illum unde ipsa?
+          Consequatur, distinctio?
+        </p>
+        <div class="box-container">
+          <div class="box">
+            <h3><i class="fas fa-check"></i>body and mind</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+              enim.
+            </p>
+          </div>
+          <div class="box">
+            <h3><i class="fas fa-check"></i>healthy life</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+              enim.
+            </p>
+          </div>
+          <div class="box">
+            <h3><i class="fas fa-check"></i>strategies</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+              enim.
+            </p>
+          </div>
+          <div class="box">
+            <h3><i class="fas fa-check"></i>workout</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+              enim.
+            </p>
+          </div>
+        </div>
+        <a href="#" class="btn">read more</a>
+      </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- features section starts  -->
+
+    <section class="features" id="features">
+      <h1 class="heading"><span>gym features</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/about1.jpg" alt="" />
+          </div>
+          <div class="content">
+            <img src="images/icon-1.png" alt="" />
+            <h3>body building</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Similique, atque.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+
+        <div class="box second">
+          <div class="image">
+            <img src="images/f-img-2.jpg" alt="" />
+          </div>
+          <div class="content">
+            <img src="images/icon-2.png" alt="" />
+            <h3>gym for men</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Similique, atque.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/f-img-3.jpg" alt="" />
+          </div>
+          <div class="content">
+            <img src="images/icon-3.png" alt="" />
+            <h3>gym for women</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Similique, atque.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- features section ends -->
+
+    <!-- pricing section starts  -->
+
+    <section class="pricing" id="pricing">
+      <div class="information">
+        <span>pricing plan</span>
+        <h3>affordable pricing plan for your</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolore
+          excepturi ea suscipit fugiat cum quae, rerum optio mollitia! Tempora?
+        </p>
+        <p><i class="fas fa-check"></i> cardio exercise</p>
+        <p><i class="fas fa-check"></i> weight lifting</p>
+        <p><i class="fas fa-check"></i> diet plans</p>
+        <p><i class="fas fa-check"></i> overall results</p>
+        <a href="#" class="btn">all pricing</a>
+      </div>
+
+      <div class="plan basic">
+        <h3>basic plan</h3>
+        <div class="price"><span>$</span>30<span>/mo</span></div>
+        <div class="list">
+          <p><i class="fas fa-check"></i> personal training</p>
+          <p><i class="fas fa-check"></i> cardio exercise</p>
+          <p><i class="fas fa-check"></i> weight lifting</p>
+          <p><i class="fas fa-check"></i> diet plans</p>
+          <p><i class="fas fa-check"></i> overall results</p>
+        </div>
+        <a href="#" class="btn">get started</a>
+      </div>
+
+      <div class="plan">
+        <h3>premium plan</h3>
+        <div class="price"><span>$</span>90<span>/mo</span></div>
+        <div class="list">
+          <p><i class="fas fa-check"></i> personal training</p>
+          <p><i class="fas fa-check"></i> cardio exercise</p>
+          <p><i class="fas fa-check"></i> weight lifting</p>
+          <p><i class="fas fa-check"></i> diet plans</p>
+          <p><i class="fas fa-check"></i> overall results</p>
+        </div>
+        <a href="#" class="btn">get started</a>
+      </div>
+    </section>
+
+    <!-- pricing section ends -->
+
+    <!-- trainers section starts  -->
+
+    <section class="trainers" id="trainers">
+      <h1 class="heading"><span>expert trainers</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/trainer-7.jpg" alt="" />
+          <div class="content">
+            <span>expert trainer</span>
+            <h3>john deo</h3>
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-pinterest"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/trainer-2.jpg" alt="" />
+          <div class="content">
+            <span>expert trainer</span>
+            <h3>john deo</h3>
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-pinterest"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/trainer-5.jpg" alt="" />
+          <div class="content">
+            <span>expert trainer</span>
+            <h3>john deo</h3>
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-pinterest"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/trainer-4.jpg" alt="" />
+          <div class="content">
+            <span>expert trainer</span>
+            <h3>john deo</h3>
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-pinterest"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- trainers section ends -->
+
+    <!-- banner section starts  -->
+
+    <section class="banner">
+      <span>join us now</span>
+      <h3>get upto 50% discount</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+        architecto nesciunt aut sapiente quis inventore quam vitae quod illum
+        incidunt.
+      </p>
+      <a href="#" class="btn">get discount</a>
+    </section>
+
+    <!-- banner section ends -->
+
+    <section class="contact-box" id="contact">
+      <div class="left-box">
+        <div class="img-box">
+          <img src="/images/bg1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="right-box">
+        <div class="title">
+          <h1>Contact Us</h1>
+        </div>
+        <form id="contactForm">
+          <input
+            type="text"
+            placeholder="Name"
+            class="box"
+            id="nameInputField"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            class="box"
+            id="emailInputField"
+          />
+          <input
+            type="text"
+            placeholder="Contact No (+61)"
+            class="box"
+            id="contactInputField"
+          />
+          <input type="text" placeholder="Age" class="box" id="ageInputField" />
+          <textarea
+            name=""
+            placeholder="Message"
+            cols="30"
+            rows="5"
+            id="messageInputField"
+          ></textarea>
+          <div class="error-box hidden" id="errorBox">
+            <p id="errorText"></p>
+          </div>
+          <input type="submit" value="send message" class="input-btn" />
+        </form>
+      </div>
+    </section>
+
+    <!-- footer section starts  -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a class="links" href="#home">home</a>
+          <a class="links" href="#about">about</a>
+          <a class="links" href="#features">features</a>
+          <a class="links" href="#pricing">pricing</a>
+          <a class="links" href="#trainers">trainers</a>
+          <a class="links" href="#contact">contact</a>
+        </div>
+
+        <div class="box">
+          <h3>opening hours</h3>
+          <p>monday : <i> 7:00am - 10:30pm </i></p>
+          <p>tuesday : <i> 7:00am - 10:30pm </i></p>
+          <p>wednesday : <i> 7:00am - 10:30pm </i></p>
+          <p>friday : <i> 7:00am - 10:30pm </i></p>
+          <p>saturday : <i> 7:00am - 10:30pm </i></p>
+          <p>sunday : <i> closed </i></p>
+        </div>
+
+        <div class="box">
+          <h3>opening hours</h3>
+          <p><i class="fas fa-phone"></i> +123-456-7890</p>
+          <p><i class="fas fa-phone"></i> +999-888-777</p>
+          <p><i class="fas fa-envelope"></i> abhimanyusalaria@gmail.com</p>
+          <p><i class="fas fa-map"></i> sydney, australia</p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <form action="">
+            <input
+              type="email"
+              name=""
+              class="email"
+              placeholder="enter your email"
+              id=""
+            />
+            <input type="submit" value="subscribe" class="btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="credit">
+      created by <span>Mr. Abhimanyu Salaria </span> | all rights reserved!
+    </div>
+
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
