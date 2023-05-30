@@ -207,6 +207,8 @@ section {
   -ms-flex: 1 1 42rem;
   flex: 1 1 42rem;
   position: relative;
+  width: 100%;
+  height: 645px;
 }
 
 .about .image::before,
@@ -231,6 +233,8 @@ section {
 
 .about .image img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   padding: 2rem;
 }
 
@@ -898,6 +902,12 @@ section {
   }
   .modal-container .modal-box {
     padding: 20px 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .about .image {
+    height: 400px;
   }
 }
 /*# sourceMappingURL=style.css.map */
