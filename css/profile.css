@@ -95,6 +95,41 @@
   margin-bottom: 20px;
 }
 
+.calorie-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  padding-top: 0;
+}
+
+.calorie-box .left-box {
+  order: 1;
+}
+
+.calorie-box .left-box .img-box {
+  width: 100%;
+  height: 250px;
+}
+
+.calorie-box .left-box .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.calorie-box .right-box .title h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.calorie-box .right-box .info p {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
 .table-modal-box {
   max-width: 550px !important;
 }
@@ -109,6 +144,18 @@
   text-align: center;
   font-weight: 600;
   margin-bottom: 20px;
+  margin-top: 6px;
+}
+
+.table-modal .title p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.table-modal .title i {
+  color: #ffffff;
 }
 
 table {
@@ -139,10 +186,11 @@ table td {
   font-weight: 600;
   color: #ffffff;
   padding: 0 10px;
+  background-color: #222222;
 }
 
 table td.td-start {
-  background-color: #27ae60;
+  background-color: #3498db;
 }
 
 table td.td-img {
@@ -157,13 +205,31 @@ table td.td-img img {
   .meal-box {
     grid-template-columns: repeat(1, 1fr);
   }
+  .meal-box .left-box .img-box {
+    margin-bottom: 20px;
+  }
   .meditate-box {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .meditate-box .left-box {
+    order: 0;
+  }
+  .meditation-box .left-box .img-box {
+    margin-bottom: 20px;
   }
   .workout-box {
     grid-template-columns: repeat(1, 1fr);
   }
-  .meditate-box .left-box .img-box {
-    margin-top: 30px;
+  .workout-box .left-box .img-box {
+    margin-bottom: 20px;
+  }
+  .calorie-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .calorie-box .left-box {
+    order: 0;
+  }
+  .calorie-box .left-box .img-box {
+    margin-bottom: 20px;
   }
 }
